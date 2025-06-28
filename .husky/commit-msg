@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# npx --no -- commitlint --edit ${1}
+# npm run commitlint ${1}
+COMMIT_MSG=$(cat $1)
+# 使用提交消息
+echo "最终提交消息: $COMMIT_MSG"

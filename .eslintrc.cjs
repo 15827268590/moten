@@ -15,9 +15,10 @@ module.exports = {
       extends: ['plugin:cypress/recommended']
     }
   ],
+  ignorePatterns: ["**/scripts/*"],
   plugins: ['simple-import-sort'],
   rules: {
-    'no-console': 'warn',
+    'no-console': 'error',
     'simple-import-sort/imports': 'error'
   },
   parserOptions: {

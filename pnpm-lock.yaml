@@ -25,6 +25,7 @@ specifiers:
   npm-run-all: 4.1.5
   pinia: 2.0.21
   prettier: 3.0.0
+  tsno: 2.0.0
   typescript: 4.7.4
   vite: 3.0.9
   vitest: 0.23.0
@@ -64,6 +65,7 @@ devDependencies:
   jsdom: 20.0.0
   npm-run-all: 4.1.5
   prettier: 3.0.0
+  tsno: 2.0.0
   typescript: 4.7.4
   vite: 3.0.9
   vitest: 0.23.0_jsdom@20.0.0
@@ -5337,6 +5339,13 @@ packages:
 
   /tslib/2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+    dev: true
+
+  /tsno/2.0.0:
+    resolution: {integrity: sha512-B0qp3W6GXNF8TLu3CD+45MfNDlvqys2bYKbYz52Od1CDkMP/mNsgguqe5tmDYTZM9ZGp1bDBuiTFvCKTVnUOfw==}
+    hasBin: true
+    dependencies:
+      esbuild: 0.14.54
     dev: true
 
   /tsutils/3.21.0_typescript@4.7.4:
