@@ -15,6 +15,7 @@
     "**/lib/**",
     "**/docs/**",
     "**/stats.html",
-    "**/detect.ts"
+    "**/detect.ts",
+    "**/package.json/**"
   ]
 }
