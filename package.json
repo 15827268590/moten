@@ -12,12 +12,19 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "prepare": "husky install",
     "commit": "git-cz",
-    "commitlint": "commitlint --edit"
+    "commitlint": "commitlint --edit",
+    "lint:style": "stylelint **/*.{vue,css}",
+    "lint:stage": "lint-staged"
   },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-git"
     }
+  },
+  "lint-staged": {
+    "*.{html,vue,css,sass,scss,ts}": "prettier --write",
+    "*.{vue,ts}": "eslint --fix",
+    "*.{vue,css,sass,scss}": "stylelint --fix"
   },
   "dependencies": {
     "pinia": "2.0.21",
@@ -26,6 +33,12 @@
     "vuedraggable": "4.1.0"
   },
   "devDependencies": {
+    "stylelint": "15.10.2",
+    "stylelint-config-standard": "34.0.0",
+    "stylelint-config-prettier": "9.0.5",
+    "stylelint-config-html": "1.1.0",
+    "stylelint-config-vue": "1.0.0",
+    "lint-staged": "13.2.3",
     "tsno": "2.0.0",
     "husky": "9.1.7",
     "zx": "7.2.3",
